@@ -1,3 +1,5 @@
+rem last tested on 19.12
+
 rem #############################
 rem # prepare tables            #
 rem #############################
