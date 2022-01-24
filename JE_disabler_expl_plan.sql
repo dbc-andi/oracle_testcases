@@ -21,7 +21,7 @@ create table demo2
   constraint demo2_demo_fk foreign key (id) references demo1(id) deferrable initially deferred
 );
 
-insert into demo2
+insert /*+ append */into demo2
 select rownum id, lpad('*', 200, '*') pad from dual
 connect by level <= 10;
 
